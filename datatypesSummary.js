@@ -50,3 +50,31 @@ console.log(typeof myFunction);
 // object=>object
 // function=>function-object
 // Array=object
+
+//*******************************Memory******************************/
+/**
+ * 2 types memory-allocation
+ * (1)-Stack(Primitve)->give copy of original value
+ * (2)-Heap(non-Primitive)->give reference of original value
+ * 
+ * 
+ * example:-
+ * let myYoutube="SanjhOk33.com"
+ * let anothername=myYoutubename
+ * anothername="chaiaurcode"
+ * 
+ * console.log(myYoutubename); //not change value
+ * console.log(anothername); //change value of copy variables
+ * 
+ * let userOne={
+ * email:"user@google.com",
+ * upi:"user@ybl"
+ * }
+ * 
+ * let userTwo=userOne
+ * userTwo.email="Sanjh@google.com"
+ * 
+ * console.log(userOne.email);
+ * console.log(userTwo.email);
+ * 
+ */
