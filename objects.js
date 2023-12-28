@@ -47,21 +47,21 @@
 
 //--------object Constructor(singleton)--------
 // const tinderUser=new Object() //singleton object
-const tinderUser={}  //non-singleton object
- tinderUser.id="123abc"
- tinderUser.name="Sammy"
- tinderUser.isLoggedIn=false
+// const tinderUser={}  //non-singleton object
+//  tinderUser.id="123abc"
+//  tinderUser.name="Sammy"
+//  tinderUser.isLoggedIn=false
 // console.log(tinderUser);
 
-const regularUser={
-    email:"some@google.com",
-    fullname:{
-        userfullname:{
-            firstname:"Sanjh",
-            lastname:"Rai"
-        }
-    }
-}
+// const regularUser={
+//     email:"some@google.com",
+//     fullname:{
+//         userfullname:{
+//             firstname:"Sanjh",
+//             lastname:"Rai"
+//         }
+//     }
+// }
 
 // console.log(regularUser.fullname.userfullname);
 
@@ -75,24 +75,46 @@ const regularUser={
 // console.log(obj5);
 
 
-const users=[
-    {
-        id:1,
-        email:"s@gmail.com"
-    },
-    {
-        id:2,
-        email:"d@gmail.com"
-    },
-    {
-        id:3,
-        email:"n@gmail.com"
-    },
-]
+// const users=[
+//     {
+//         id:1,
+//         email:"s@gmail.com"
+//     },
+//     {
+//         id:2,
+//         email:"d@gmail.com"
+//     },
+//     {
+//         id:3,
+//         email:"n@gmail.com"
+//     },
+// ]
 
-users[1].email
+// users[1].email
 // console.log(tinderUser);
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+//----------Destructuring of Objects-----------
+// const course={
+//     coursename:"js in Hindi",
+//     price:"999",
+//     courseInstructor:"Sanjh"
+// }
+
+// const {courseInstructor}=course
+// console.log(courseInstructor);
+// const {courseInstructor:instructor}=course
+// console.log(instructor);
+
+
+//--------JSON format--------
+// {
+//     "name":"Sanjh",
+//     "id":"1232",
+//     "code":"33abc",
+// }
+
