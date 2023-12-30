@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Changer</title>
+    
+    <!-- //-----------Internal CSS----------- -->
+    <style>
+        .container{
+            border: 2px solid grey;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px grey;
+            margin: auto;
+            padding:5px 2px;
+        }
+        #heading-container{
+            text-align: center;
+        }
+        #span-container{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            flex-wrap: wrap;
+           
+            padding-bottom: 7px;
+        }
+        .color{
+            border:2px solid black;
+            border-radius: 45px;
+            padding: 1px 5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #green{
+            background-color: green;
+        }
+        #purple{
+            background-color: purple;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #brown{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- //------------HTML-------------- -->
+    <div class="container">
+        <div id="heading-container">
+            <h1>Color Changer</h1>
+        </div>
+       <div id="span-container">
+            <span class="color" id="green">Green</span>
+            <span class="color" id="purple">Purple</span>
+            <span class="color" id="blue">Blue</span>
+            <span class="color" id="yellow">Yellow</span>
+            <span class="color" id="brown">Brown</span>
+       </div>
+    </div>
+
+    <!-- //------------JS-------------- -->
+    <script>
+       const main_div = document.querySelectorAll('.color')
+    //    console.log(main_div);
+      
+       main_div.forEach((span)=>{
+         //-------event ek bahut bada object hai----------
+         //-------event.target se yeah pta chalta hai ki event aa kaha se rahaa hai-------- 
+         span.addEventListener('click',function(e){
+             console.log(e.target.id);
+              if(e.target.id==='green'){
+                  document.body.style.backgroundColor=e.target.id;
+              }
+              if(e.target.id==='purple'){
+                  document.body.style.backgroundColor=e.target.id;
+              }
+              if(e.target.id==='blue'){
+                  document.body.style.backgroundColor=e.target.id;
+              }
+              if(e.target.id==='yellow'){
+                  document.body.style.backgroundColor=e.target.id;
+              }
+              if(e.target.id==='brown'){
+                  document.body.style.backgroundColor=e.target.id;
+              }
+         })
+       })
+       
+
+       
+
+    </script>
+</body>
+</html>
