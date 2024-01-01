@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    <script>
+        //----------------ye function core js ke parts nhi hai ye window or browser or runtime-environment ke part hote hai------------------------
+        // setTimeout(function () {
+        //     console.log("Sanjh");
+        // },5000);
+
+        const sayHey=function(){
+            console.log("Sanjay Rai");
+        };
+        setTimeout(sayHey,2000);
+
+
+        const changeText=()=>{
+            document.querySelector('h1').innerHTML="Best JS Series";
+        }
+       const changeMe = setTimeout(changeText,2000);
+        
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe);
+            console.log('Stopped');
+        },false)
+    </script>
+</body>
+</html>

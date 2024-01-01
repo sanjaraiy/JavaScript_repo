@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop two</title>
+</head>
+<body>
+    <h1>Chai aur code || Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+
+    //   setInterval(function(){
+    //     console.log("Sanjh",Date.now());
+    //   },1000);
+
+      const sayDate=(para)=>{
+        console.log(para,Date.now());
+      };
+    // const intervalId = setInterval(sayDate,1000,"Hey");
+    // clearInterval(intervalId);
+    let intervalId=0;
+    document.querySelector('#start').addEventListener('click',()=>{
+          console.log("STARTED");
+          intervalId=setInterval(sayDate,1000,"hey");
+
+    },false)
+    document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(intervalId);
+            console.log("STOPPED")
+    },false)
+
+    </script>
+</body>
+</html>
