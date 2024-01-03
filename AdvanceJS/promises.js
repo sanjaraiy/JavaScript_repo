@@ -1,71 +1,71 @@
 //-------Promise is object and we can create a instance of promise (in ES6) by using "new" keyword--------------
 //---Step-(1) create Instance promise------
-const promiseOne=new Promise(function(resolve,reject){
-  //Do an async task
-  //DB calls, cryptography, network
-  setTimeout(function(){
-    console.log('Async task is complete');
-    resolve(); //now connected .then()
-  },1000)
-})
+// const promiseOne=new Promise(function(resolve,reject){
+//   //Do an async task
+//   //DB calls, cryptography, network
+//   setTimeout(function(){
+//     console.log('Async task is complete');
+//     resolve(); //now connected .then()
+//   },1000)
+// })
 
 // //---Step-(2) consume Instance promise------
 // //******".then()" is directly connected with resolve*****
-promiseOne.then(function(){
-console.log("Promise consumed");
-})
+// promiseOne.then(function(){
+// console.log("Promise consumed");
+// })
 
 
 //---------------Promise two-----------------
-new Promise(function(resolve,reject){
-  setTimeout(function(){
-    console.log('Async task 2');
-    resolve();
-  },1000)
-}).then(function(){
-  console.log('Async 2 resolved');
-})
+// new Promise(function(resolve,reject){
+//   setTimeout(function(){
+//     console.log('Async task 2');
+//     resolve();
+//   },1000)
+// }).then(function(){
+//   console.log('Async 2 resolved');
+// })
 
 
 //---------------Promise three---------------
-const promiseThree=new Promise(function(resolve,reject){
-  setTimeout(function(){
-    resolve({usename:"Chai",email:"chai@example.com"})
-  },1000);
+// const promiseThree=new Promise(function(resolve,reject){
+//   setTimeout(function(){
+//     resolve({usename:"Chai",email:"chai@example.com"})
+//   },1000);
 
-})
+// })
 
-promiseThree.then(function(user){
- console.log(user);
-})
+// promiseThree.then(function(user){
+//  console.log(user);
+// })
 
 //-----------Promise four--------------
 //******(1) Method ---> Use Here => .then().catch().finally()************/
-const promiseFour=new Promise(function(resolve,reject){
-   setTimeout(function(){
-     let error=true;
-     if(!error){
-      resolve({username:"Sanjh",password:"123"});
-     }else{
-      reject('Something went wrong');
-     }
+// const promiseFour=new Promise(function(resolve,reject){
+//    setTimeout(function(){
+//      let error=true;
+//      if(!error){
+//       resolve({username:"Sanjh",password:"123"});
+//      }else{
+//       reject('Something went wrong');
+//      }
 
-   },1000)
-})
-promiseFour
-.then(function(user){
-   console.log(user);
-   return user.username;
-})
-.then((username)=>{
-  console.log(username);
-})
-.catch(function(error){
-     console.log(error);
-})
-.finally(()=>{
-  console.log('The promise is either resolved or rejected');
-})
+//    },1000)
+// })
+// promiseFour
+// .then(function(user){
+//    console.log(user);
+//    return user.username;
+// })
+// .then((username)=>{
+//   console.log(username);
+// })
+// .catch(function(error){
+//      console.log(error);
+// })
+// .finally(()=>{
+//   console.log('The promise is either resolved or rejected');
+// })
 
 //---------------------Promise five----------------------
 //******(2) Method ---> Use Here => async await ************/
