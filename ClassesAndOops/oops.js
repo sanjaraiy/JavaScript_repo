@@ -47,6 +47,7 @@ console.log(userOne.constructor);
         //  (3) all arguments are injenced with the "this" keyword
         // (4) we will get them in function 
 
+      
 
 
 
