@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #313131;">
+      <button id="orange">Orange</button>
+      <button id="green">Green</button>
+    <script>
+
+     //------------Repeat the same code problem-----------------
+    //   document.getElementById('orange').onclick=function(){
+    //     document.body.style.backgroundColor=`orange`
+    //   }
+
+    //   document.getElementById('green').onclick=function(){
+    //     document.body.style.backgroundColor=`green`
+    //   }
+
+    
+    //----------real world problem solve by closure or lexical scoping------------
+    function clickHandler(color){
+    
+        //    const change=document.body.style.backgroundColor=`${color}`
+
+       return function(){
+        document.body.style.backgroundColor=`${color}`
+       }
+    }
+    
+    //---give reference of function only----------
+    // document.getElementById('orange').onclick=clickHandler
+    document.getElementById('orange').onclick=clickHandler('orange')  //execution of function at runtime or call time
+
+
+   
+        //-------------Lexical scoping----------------
+        // function outer(){
+        //     let username="sanjh"
+
+        //     function inner(){
+        //         let sercet="my123"
+        //         console.log("inner:",username);
+        //     }
+
+        //     function innerTwo(){
+        //         console.log("innerTwo:",username);
+        //         console.log(sercet);
+        //     }
+
+        //     inner()
+        //     innerTwo()
+
+        // }
+        // outer()
+        // console.log("TOO OUTER:",username);
+
+
+
+
+
+    //----------------Closures-------------------
+    //---this return all inner lexical scoping of outer function that has been called----
+    // when we return a inner function that is not return but although return lexical scoping of inner function 
+    // function makeFunc(){
+    //     const name="sanjh";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc=makeFunc();
+    // myFunc();
+
+
+
+
+    </script>
+    
+</body>
+</html>
