@@ -42,7 +42,7 @@ console.log(userOne.constructor);
 // console.log(userTwo);
 
 
-//new => (1) new object {} create as instance
+// new =>   (1) new object {} create as instance
         //  (2) constructor function call hota hai due to "new" keyword that packets all the arguments and give them.
         //  (3) all arguments are injenced with the "this" keyword
         // (4) we will get them in function 

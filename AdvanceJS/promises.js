@@ -1,4 +1,5 @@
 //-------Promise is object and we can create a instance of promise (in ES6) by using "new" keyword--------------
+
 //---Step-(1) create Instance promise------
 // const promiseOne=new Promise(function(resolve,reject){
 //   //Do an async task

@@ -32,6 +32,8 @@ const arr=[1,2,3,4,5]
 
 //splice=>(1) original array is manipulated
        // (2)  last index is included
+
+
 // console.log("A:-",arr);
 // const myn1=arr.slice(1,3);
 // console.log(myn1);
@@ -41,6 +43,8 @@ const arr=[1,2,3,4,5]
 // console.log("C:-",arr);
 // console.log(myn2);
 
+
+
 const marvel_heros=["thor","Ironman","spiderman"]
 const dc_heros=["superman","flash","batman"]
 // marvel_heros.push(dc_heros)
@@ -49,9 +53,11 @@ const dc_heros=["superman","flash","batman"]
 
 // marvel_heros.concat(dc_heros)
 // console.log(marvel_heros);
+
 //----Concat method----
 const allHeros=marvel_heros.concat(dc_heros)
 // console.log(allHeros);
+
 //------spread operator and flat method------
 const all_new_heros=[...marvel_heros,...dc_heros];
 // console.log(all_new_heros);
@@ -62,7 +68,7 @@ const real_another_array=another_array.flat(Infinity)
 
 // console.log(Array.isArray("Sanjh")) //return datatype=>boolean
 // console.log(Array.from("Sanjh"))
-// console.log(Array.from({name:"hitesh"})) //interesting
+// console.log(Array.from({name:"hitesh"})) //interesting 
 
 let score1=100
 let score2=200

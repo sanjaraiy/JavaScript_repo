@@ -7,9 +7,9 @@ let valueInNumber=Number(score)
 
 // console.log(typeof valueInNumber);
 // console.log(valueInNumber);
-//"33"=>33
-//"33abc"=>NaN (but type-number)
-//true=>1; false=>0
+//"33" => 33
+//"33abc" => NaN (but type-number)
+//true => 1; false => 0
 
 let isLoggedIn="sanjh"
 let booleamIsLoggedIn=Boolean(isLoggedIn)
@@ -37,7 +37,7 @@ let str2=" singh"
 
 // console.log(1+"2");
 // console.log("1"+2);
-// console.log("1"+2+2); after string number convert into string
+// console.log("1"+2+2); after string,  number convert into string
 // console.log(1+2+"2");
 
 // console.log(+true);

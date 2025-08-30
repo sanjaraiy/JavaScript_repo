@@ -3,6 +3,7 @@
 // const balance=new Number(100) //explicitly define datatype(Number)
 // console.log(balance);
 
+
 //-----------------Methods of Number----------------------------
 // console.log(balance.valueOf());
 // console.log(balance.toString().length);
@@ -12,6 +13,7 @@
 // console.log(otherNumber.toPrecision(3));
 // const hundreds=10000000
 // console.log(hundreds.toLocaleString('en-IN'));
+
 
 
 //******************************Maths**********************************/

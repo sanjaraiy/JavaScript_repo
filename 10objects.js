@@ -6,8 +6,8 @@
 // const User={
 //       name:"Sanjh",
 //       "full name":"Sanjh Rai",
-//        mySym:"mykey1", //treat as string not symbol
-//        [mySym]:"mykey1",
+//       mySym:"mykey1", //treat as string not symbol
+//       [mySym]:"mykey1",
 //       age:18,
 //       location:"Jaipur",
 //       email:"Sanjh@google.com",

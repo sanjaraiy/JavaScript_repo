@@ -23,7 +23,7 @@
 //---------Reference(Non-primitive)(call by reference)--------
 // (1) Arrays (return object)
 // (2) Objects (return object)
-// (3) Functions (return function-object)
+// (3) Functions (return function -->> object-function)
 
 const heros=["shaktiman","naagraj","doga"]
 let myObj={
@@ -37,19 +37,21 @@ let myFunction=function(){
 
 console.log(typeof myFunction);
 
+
 //---------------Read-more-------------
 //https://262.ecma-international.org/5.1/#sec-11.4.3
 
 
 //-----------datatype-return-type=>----------
-// undefined=>undefined
-// null=>Object
-// boolean=>boolean
-// Number=>Number
-// string=>string
-// object=>object
-// function=>function-object
-// Array=object
+// undefined => undefined
+// null => Object
+// boolean => boolean
+// Number => Number
+// string => string
+// object => object
+// function => function-object/function
+// Array => object
+
 
 //*******************************Memory******************************/
 /**

@@ -13,10 +13,10 @@ let name="sanjh"
 let age=18;
 let isLoggedIn=false;
 
-// number=>2 to power 53
+// number => 2 to power 53
 // bigint
-// string=>""
-// booleam => true/false
+// string => ""
+// boolean => true/false
 // null => standalone value
 // underfined => not value assign
 // symbol => unique

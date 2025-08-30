@@ -22,11 +22,14 @@
 // console.log(newStringOne);
 // console.log(newStringOne.trim());
 
-// const url="https://Sanjh.com/sanjh%20choudhary"
+// const url="https://Sanjh.com/sanjh%20rai"
 
 // console.log(url.replace('%20','-'))
 // console.log(url.includes('sundar'));
 // console.log(gamename.split('-'));
+
+
+
 
 //--------------------diff btw constructor string V/S normal String------------------------
 // const str1=new String("Hello")

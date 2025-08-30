@@ -13,7 +13,7 @@
 // console.log(b);
 // console.log(c);
 
-// NOTE => node wala scope different hai window console wala scope se 
+// NOTE => nodejs wala scope different hai window console wale scope se 
 
 
 //-------clousre property---------
