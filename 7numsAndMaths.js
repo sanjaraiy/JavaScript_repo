@@ -1,6 +1,6 @@
-// const score=400 //implicitly define datatype(Number)
+// const score = 400 //implicitly define datatype(Number)
 
-// const balance=new Number(100) //explicitly define datatype(Number)
+// const balance = new Number(100) //explicitly define datatype(Number)
 // console.log(balance);
 
 

@@ -117,8 +117,8 @@ const arr1=[1,2,13,5]
 // const newArr=arr1.sort()
 // console.log(newArr);
 
-const newArr=arr1.toSorted((a,b)=>a-b)
-console.log(newArr);
+// const newArr=arr1.toSorted((a,b)=>a-b)
+// console.log(newArr);
 
 // const newarr=arr1.reverse()
 // console.log(newarr);

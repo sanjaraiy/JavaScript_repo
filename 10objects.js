@@ -1,9 +1,9 @@
-// when the temp literal se jo object banta hai vo singleton object nhi banta hai 
+// when the template literal se jo object banta hai vo singleton object nhi banta hai 
 //constructor se always object singleton banta hai
 
 //-----object literals-------
-// const mySym=Symbol("key1")
-// const User={
+// const mySym = Symbol("key1")
+// const User = {
 //       name:"Sanjh",
 //       "full name":"Sanjh Rai",
 //       mySym:"mykey1", //treat as string not symbol
@@ -22,13 +22,13 @@
 // console.log(typeof User.mySym);
 // console.log(typeof User[mySym]);
 
-// User.email="SanjhDeep@chatgpt.com"
+// User.email = "SanjhDeep@chatgpt.com"
 // console.log(User["email"]);
 // Object.freeze(User) //can't change any property of object
-// User.email="SanjhDeep@microsoft.com"
+// User.email = "SanjhDeep@microsoft.com"
 // console.log(User);
 
-// User.greeting=function(){
+// User.greeting = function(){
 //     console.log("Hello Js user");
 // }
 
@@ -36,7 +36,7 @@
 // console.log(User.greeting()); // function executing
 
 //string interpolation means that use the 'backtik'
-// User.greetingTwo=function(){
+// User.greetingTwo = function(){
 //     console.log(`Hello JS user2, ${this.name}`);
 // }
 // console.log(User.greetingTwo());
@@ -46,14 +46,14 @@
 
 
 //--------object Constructor(singleton)--------
-// const tinderUser=new Object() //singleton object
-// const tinderUser={}  //non-singleton object
-//  tinderUser.id="123abc"
-//  tinderUser.name="Sammy"
+// const tinderUser = new Object() //singleton object
+// const tinderUser = {}  //non-singleton object
+//  tinderUser.id = "123abc"
+//  tinderUser.name = "Sammy"
 //  tinderUser.isLoggedIn=false
 // console.log(tinderUser);
 
-// const regularUser={
+// const regularUser = {
 //     email:"some@google.com",
 //     fullname:{
 //         userfullname:{
@@ -65,17 +65,17 @@
 
 // console.log(regularUser.fullname.userfullname);
 
-// const obj1={1:"a",2:"b"}
-// const obj2={3:"a",4:"b"}
-// const obj4={5:"a",6:"b"}
-// const obj3={obj1,obj2}
-// const obj3=Object.assign({},obj1,obj2,obj4)
+// const obj1 = {1:"a",2:"b"}
+// const obj2 = {3:"a",4:"b"}
+// const obj4 = {5:"a",6:"b"}
+// const obj3 = {obj1,obj2}
+// const obj3 = Object.assign({},obj1,obj2,obj4)
 
-// const obj5={...obj1,...obj2}
+// const obj5 = {...obj1,...obj2}
 // console.log(obj5);
 
 
-// const users=[
+// const users = [
 //     {
 //         id:1,
 //         email:"s@gmail.com"
@@ -99,15 +99,15 @@
 
 
 //----------Destructuring of Objects-----------
-// const course={
+// const course = {
 //     coursename:"js in Hindi",
 //     price:"999",
 //     courseInstructor:"Sanjh"
 // }
 
-// const {courseInstructor}=course
+// const {courseInstructor} = course;
 // console.log(courseInstructor);
-// const {courseInstructor:instructor}=course
+// const {courseInstructor:instructor} = course;
 // console.log(instructor);
 
 

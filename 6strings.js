@@ -1,24 +1,24 @@
-// const name="Sanjh"
-// const repoCount=50
+// const name = "Sanjh"
+// const repoCount = 50
 
 // console.log(name + repoCount + "value");
 // console.log(`Hello my name is ${name} and repoCount is ${repoCount} value`);
 
-// const gamename=new String('Sanjh-rai');
+// const gamename = new String('Sanjh-rai');
 // console.log(gamename[0]);
 // console.log(gamename.__proto__);
 // console.log(gamename.length);
 // console.log(gamename.toUpperCase());
-// // console.log(gamename.fontcolor());
+// console.log(gamename.fontcolor());
 // console.log(gamename.charAt(2));
 // console.log(gamename.indexOf('n'));
 
-// const newString=gamename.substring(0,4);
+// const newString = gamename.substring(0,4);
 // console.log(newString);
-// const anotherString=gamename.slice(-6,4);
+// const anotherString = gamename.slice(-6,4);
 // console.log(anotherString);
 
-// const newStringOne="    Sanjh   "
+// const newStringOne = "    Sanjh   "
 // console.log(newStringOne);
 // console.log(newStringOne.trim());
 
@@ -45,48 +45,54 @@
 //********String methods***********
 const name="Hello-world"
 
+//====== Without Arguments Methods =======
+// console.log(name.bold());    
+// console.log(name.big()); 
+// console.log(name.blink())
+// console.log(name.constructor());
+// console.log(name.fixed());
+// console.log(name.isWellFormed());
+// console.log(name.italics());
+// console.log(name.valueOf());
+// console.log(name.trimStart());
+// console.log(name.trimEnd());
+// console.log(name.trimLeft());
+// console.log(name.trimRight());
+// console.log(name.toLowerCase());
+// console.log(name.toUpperCase());
+// console.log(name.toLocaleLowerCase());
+// console.log(name.toLocaleUpperCase());
+// console.log(name.toString());
+// console.log(name.sup());
+// console.log(name.small());
+// console.log(name.normalize());
+
+
+//====== With Arguments Methods =======
 // console.log(name.anchor("heading"));
 // console.log(name.at(5));
-// console.log(name.big());
-// console.log(name.blink())
-// console.log(name.bold());
 // console.log(name.charAt(3));
 // console.log(name.charCodeAt(3)); //return decimal value of char
 // console.log(name.codePointAt(1)); //return decimal value of char
 // console.log(name.concat(" Sanjh"));
-// console.log(name.constructor());
 // console.log(name.endsWith('d'));
-// console.log(name.fixed());
 // console.log(name.fontcolor("red"));
 // console.log(name.fontsize("33px"));
 // console.log(name.includes('H'));
 // console.log(name.indexOf('w'));
 // console.log(name.lastIndexOf('w'));
-// console.log(name.isWellFormed());
-// console.log(name.italics());
-// console.log(name.valueOf());
-// console.log(name.trimLeft());
-// console.log(name.trimRight());
-// console.log(name.trimStart());
-// console.log(name.trimEnd());
-// console.log(name.toLocaleLowerCase());
-// console.log(name.toLocaleUpperCase());
-// console.log(name.toLowerCase());
-// console.log(name.toUpperCase());
-// console.log(name.toString());
-// console.log(name.sup());
+//console.log(name.padStart(16,'*'));
+//console.log(name.padEnd(16,'*'));
 // console.log(name.substring(0,3));
 // console.log(name.substr(0,5));
 // console.log(name.startsWith('h'));
 // console.log(name.split('l'));
-// console.log(name.small());
 // console.log(name.slice(3));
 // console.log(name.search('world'));
 // console.log(name.match('world'))
 // console.log(name.repeat(2));
 // console.log(name.replace('world','sanjh'));
 // console.log(name.replaceAll('world','sanjh'));
-// console.log(name.normalize());
 
 
 

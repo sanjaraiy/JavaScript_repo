@@ -49,7 +49,7 @@ console.log(typeof myFunction);
 // Number => Number
 // string => string
 // object => object
-// function => function-object/function
+// function => object-function/function
 // Array => object
 
 
